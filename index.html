@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fusely</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+  <header id="header">
+    <div class="navbar">
+      <img src="./pictures/Logo.png" alt="logo">
+      <nav>
+        <ul class="nav_links"> 
+          <li><a href="#section1">Home</a></li>
+          <li><a href="#section2">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#section3">Blog</a></li>
+          <li><a href="#contacts">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <button class="secondary_button">Log in</button>
+        <button class="primary_button">Get started</button>
+      </div>
+    </div>
+    
+  </header>
+
+ <!--  თუ შეიძლება პირველ დავალებას ამ კოდის მიხედვით ნუ შემიფასებთ, რაღაცები იქ უფრო კარგად მიწერია რადგან რესფონსივი რომ გამეხადა რაღაცები შევცვალე -->
+  <section id="section1">
+    <div class="container  mt84">
+      <div class="row justify-content-between"> <!--  პირველ დავალებაში display flex ით მქონდა მსგავსი რამეები მაგრამ აქ row თი გავაკეთე, რადგან ჯერ არ ვიცი სხვანაირად როგორ გავხადო რესპონსივი -->
+        <div class="col-12 col-lg-6">
+          <div class="hero_contant ">
+            <p class="header1">Let’s get <br> fusely <br> together</p> <!--  ბუტსტრაპის გამო ტექსტის ფონტი აირია და h1ის მაგივრად P მაგიტომ გამოვიყენე, პირველ დავალებაში h1 ით მიწერია -->
+            <p class="information">Outcome-centered product that reduce churn,<br>optimize pricing, and grow your subscription<br>business end-to-end.</p>
+            <button class="primary_button">Get started</button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6  justify-content-center">
+          <img src="./pictures/Hero image.png" alt="hero" class="picture_hero">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="section2">
+    <div>
+      <div class="container">
+        <ul class="col-12 nav_links partners justify-content-between"> 
+          <li><img src="./pictures/binator logo (1).svg" alt=""></li>
+          <li><img src="./pictures/buyme logo.svg" alt=""></li>
+          <li><img src="./pictures/loogipsum logo.svg" alt=""></li>
+          <li><img src="./pictures/umbrella logo.svg" alt=""></li>
+          <li><img src="./pictures/square logo.svg" alt=""></li>
+        </ul>
+      </div>
+      <div class="container  mt220">
+        <div class="row justify-content-between">
+          <div class="col-12 col-lg-5 order-lg-2">
+            <div class="detailed_content">
+              <p class="header2">Detailed Examination</p>
+              <p class="information">A daily dataset to keep you up to date on <br> subscription market trends and what's <br> happening in your vertical.</p>
+              <button class="primary_button">Learn more</button>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-7 order-lg-1">
+            <img src="./pictures/Section Image.png" alt="hero" class="picture_hero">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div id="pricing" class="container mt220">
+      <div class="col-12">
+        <p class=" pricing header2"> <!--  ბუტსტრაპის გამო ტექსტის ფონტი აირია და h2ის მაგივრად P მაგიტომ გამოვიყენე, , პირველ დავალებაში h2 ით მიწერია -->
+          Choose your plan
+        </p>
+      </div>
+      <div class="row align-items-center justify-content-between">
+        <div class="col secondary_pricetag col-12 col-lg-3">
+          <p class="starter">
+            Starter
+          </p>
+          <p class="price">
+            Free
+          </p>
+          <ul class="frame">
+            <li>Dashboard</li>
+            <li>Limited Support</li>
+            <li>Forever free</li>
+          </ul>
+          <button class="price_button1 mt30">
+            Get started
+          </button>
+        </div>
+
+        <div class="col main_pricetag col-12 col-lg-3">
+          <p class="starter mt70 cwhite">
+            Premium
+          </p>
+          <p class="price mt40 cwhite">
+            $29<sub class="sub">/month </sub>
+          </p>
+          <ul class="frame mt40 cwhite">
+            <li>Dashboard</li>
+            <li>Limited Support</li>
+            <li>Forever free</li>
+          </ul>
+          <button class="price_button2">
+            Get started
+          </button>
+        </div>
+
+        <div class="col secondary_pricetag col-12 col-lg-3" >
+          <p class="starter">
+            Starter
+          </p>
+          <p class="price">
+            Free
+          </p>
+          <ul class="frame">
+            <li>Dashboard</li>
+            <li>Limited Support</li>
+            <li>Forever free</li>
+          </ul>
+          <button class="price_button1">
+            Get started
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="section3">
+    <div class="contact_banner col-12 col-lg-8" >
+      <div class="banner_info row ">
+        <p class="header3 col-12 col-lg-9 "> <!--  ბუტსტრაპის გამო ტექსტის ფონტი აირია და h3ის მაგივრად P მაგიტომ გამოვიყენე, , პირველ დავალებაში h3 ით მიწერია -->
+          Interested in <br> getting fusely?
+        </p>
+
+        <div class="col-12 col-lg-3">
+          <button class=" primary_button">
+            Let's talk
+          </button>
+        </div>
+        
+      </div>  
+    </div>
+  </section>
+  
+
+  <footer id="contacts">
+    <div class="footer">
+      <div class="footer_content col-6">
+        <div class="row">
+          <div class="frame col-6 col-lg-3">
+            <ul class="frame">
+              <li class="contacts">Product</li>
+              <li>How it Works</li>
+              <li>Features</li>
+              <li>pricing</li>
+              <li>FAQ</li>
+              <li>Download</li>
+            </ul>
+          </div>
+          <div class=" col-6 col-lg-3">
+            <ul class="frame">
+              <li class="contacts">Company</li>
+              <li>About</li>
+              <li>Blog</li>
+              <li>Partnership</li>
+              <li>Terms of use</li>
+              <li>Privacy policy</li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3">
+            <ul class="frame">
+              <li class="contacts">Support</li>
+              <li>Help center</li>
+              <li>Contac us</li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3">
+            <ul class="frame">
+              <li class="contacts">Get in touch</li>
+              <img src="./pictures/Social media icon.png" alt="">
+              <img src="./pictures/Social media icon (1).png" alt="">
+              <img src="./pictures/Social media icon (2).png" alt="">
+            </ul>
+          </div>
+        </div>
+               
+      </div>
+
+      <div class="bottom_info col-12">
+        <img src="./pictures/Logo.png" alt="logo" class="logo">
+        <p class="botom_information"> © Fusely 2021. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
